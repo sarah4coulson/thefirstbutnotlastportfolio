@@ -96,3 +96,11 @@ a {
     }
  
 }
+.imag {
+    height:400px;
+    width: 25%;
+    margin-bottom: 25px;
+    background-image: url("./assets/images/DSC_0425.jpg");
+    background-size: cover;
+    background-position: center;
+}
