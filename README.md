@@ -4,8 +4,8 @@ Why did you build this project?
 What problem does it solve? 
 What did you learn?
 
-Screenshot
-<img src="screenshot.png" alt="Screenshot">
+## Screenshot
+![Screenshot](/assets/images/screenshot.png "Screenshot")
 
-Link to Deployed Website
+### Link to Deployed Website
 https://sarah4coulson.github.io/thefirstbutnotlastportfolio/
