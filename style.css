@@ -1,106 +1,111 @@
+/* The asterisk is when you want to apply CSS to the entire html document */
 * {
-    box-sizing: border-box;
-  }
-  
-  .row {
-    display: flex;
-    padding: 10px ;
-    border: 1px solid #ffffff;
-  }
-  
+  box-sizing: border-box;
+}
+/* There are 3 rows one for each category and this is the styling for all 3 rows*/
+.row {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #e6ffef;
+}
+/*These are the styling for the header*/
 .header {
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #00264d;
-    color: #ffffff;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #72a384;
+  color: #e6ffef;
 }
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
+  display: inline-block;
+  font-size: 48px;
 }
 .header nav {
-    padding-top: 20px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    display: inline-flexbox;
+  padding-top: 20px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  display: inline-flexbox;
 }
 
 .header nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+  display: inline-block;
+  margin-left: 25px;
 }
+/* The styling for a (i.e. right before href)*/
 a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size:27px;
+  color: #e6ffef;
+  text-decoration: none;
+  font-size: 27px;
 }
+/*Styling for image right underneath the nav bar*/
 .picture {
-    height:200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("assets/images/stars2.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("assets/images/code2.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
-
-.content p{
-    font-size: 25px;
+/*The conent p only applies to any of the paragraphs inside of the class of content increasing the font size*/
+.content p {
+  font-size: 25px;
 }
+/*Styling for the left and right columns*/
 .column1 {
-    flex: 30%;
-    padding: 10px;
-    min-width:50px;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 30px;
-    
-  }
-  .column2 {
-    flex: 70%;
-    padding: 10px;
-    min-width:300px;
-    font-family: "Lucida Console", "Courier New", monospace;
-  }
-  .images1 img {
-    width: 100%;
-    display: flex;
-    flex: 50%; 
-    ;
-  }
-  .card img {
-    width: 100%;
-    display: flex;
-    flex:50%;
-  }
-  .card {
-    padding:5px;
-    flex: 0 0 400px;   
-  }
-  .images2{
-    display: flex;
-    flex-wrap: wrap;
-  }
- .images2 section{
-     flex:1 1 50%;
-     
- }
- @media only screen and (max-width: 992px) {
-    .images2 section{
-        flex:1 1 100%;
-        
-    }
- 
+  flex: 30%;
+  padding: 10px;
+  min-width: 50px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 30px;
 }
+.column2 {
+  flex: 70%;
+  padding: 10px;
+  min-width: 300px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+/**/
+.images1 img {
+  width: 100%;
+  display: flex;
+  flex: 50%;
+}
+/*Each of the 4 photos are listed as cards and thus us the flex attributes of those images*/
+.card img {
+  width: 100%;
+  display: flex;
+  flex: 50%;
+}
+.card {
+  padding: 5px;
+  flex: 0 0 400px;
+}
+/* Flex display for class of images 2*/
+.images2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.images2 section {
+  flex: 1 1 50%;
+}
+/*Media query for anyone who may be on a screen smaller than 992px wide*/
+@media only screen and (max-width: 992px) {
+  .images2 section {
+    flex: 1 1 100%;
+  }
+}
+/*Styling for the professional headshot. Linking it to the CSS stylesheet and adjusting the height and width*/
 .imag {
-    height:400px;
-    width: 25%;
-    margin-bottom: 25px;
-    background-image: url("./assets/images/DSC_0425.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 400px;
+  width: 25%;
+  margin-bottom: 25px;
+  background-image: url("./assets/images/headshotjpg.jpg");
+  background-size: cover;
+  background-position: center;
 }
